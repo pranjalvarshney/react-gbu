@@ -1,0 +1,40 @@
+.header-top{
+    padding: 8px 0;
+    background-color: #cc3636;
+    color: #fff;
+}
+.header-top-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.header-top-li{
+    display: flex;
+    margin: 0 10px;
+    justify-content: center;
+    align-items: center;
+}
+.header-brand{
+    display: flex;
+    position: relative;
+    padding: 10px 10%;
+}
+.header-brand-wrapper{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-brand-name-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.header-brand-name-wrapper > img{
+    height: 80px;
+    width: 80px;
+}
+.brand-name{
+    color: black;
+    padding: 0 10px;
+}
