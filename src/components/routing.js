@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Home } from "./Pages/Home/Home";
 
-export const routing = () => {
+export const Routing = () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/" />
+        <Route exact path="/" component={Home}/>
         <Route exact path="/library" />
         <Route exact path="/ccc" />
         <Route exact path="/admissions" />
