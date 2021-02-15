@@ -80,7 +80,7 @@ export const Footer = () => {
         </MDBRow>
       </MDBContainer>
       <hr />
-      <div className="text-center py-3">
+      {/* <div className="text-center py-3">
         <ul className="list-unstyled list-inline mb-0">
           <li className="list-inline-item">
             <h5 className="mb-1">Register for free</h5>
@@ -91,7 +91,7 @@ export const Footer = () => {
             </a>
           </li>
         </ul>
-      </div>
+      </div> */}
       <hr />
       <div className="text-center">
         <ul className="list-unstyled list-inline">
@@ -124,7 +124,7 @@ export const Footer = () => {
       </div>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+          &copy; {new Date().getFullYear()} Copyright: <a href="https://www.gbu.ac.in"> Gautam Buddha University </a>
         </MDBContainer>
       </div>
     </MDBFooter>
