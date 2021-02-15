@@ -14,17 +14,15 @@ export const HeaderBrand = () => {
       <div className="header-brand-wrapper">
         <div className="header-brand-name-wrapper">
           <img src="gbu.png" alt="logo" />
-          <div className="brand-name">
-            <h3>
+          <h4 className="brand-name">
               गौतम बुद्ध विश्वविद्यालय
               <br />
               GAUTAM BUDDHA UNIVERSITY
               <br />
-            </h3>
-          </div>
+          </h4>
         </div>
         <div className="header-brand-search-icons">
-          <TextField variant="outlined" placeholder="Search" />
+          <TextField variant="outlined" placeholder="Search" size="small"/>
         </div>
       </div>
     </div>
