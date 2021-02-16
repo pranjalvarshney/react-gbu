@@ -5,18 +5,23 @@ import './Footer.css'
 export const Footer = () => {
     return (
         <div>
-           <MDBFooter color="stylish-color-dark" className="page-footer font-small pt-4 mt-4 bg">
-      <MDBContainer fluid className="text-center text-md-left">
+           <MDBFooter  className="page-footer font-small pt-4 mt-4 bg bg-light unique-color-dark">
+      <MDBContainer fluid className="text-center text-md-left text-dark">
         <MDBRow>
           <MDBCol md="6">
-            <h5 className="text-uppercase mb-4 mt-3 font-weight-bold">
-              Footer Content
-            </h5>
-            <p>
-              Here you can use rows and columns here to organize your footer
-              content. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit.
-            </p>
+          <div class="text-center container text-white">
+                        <h4 class="font-weight-normal">गौतम बुद्ध
+                           विश्वविद्यालय <br></br>
+                           Gautam Buddha University <br></br>
+                        </h4>
+                        <br></br>
+                        <h6 class="font-weight-light" >
+                           Greater Noida
+                           Gautam Budh Nagar <br></br>
+                           Uttar Pradesh (India) - 201310</h6>
+                        <a href="tel:01202344200"><i class="fa fa-phone mr-3"></i>Phone No.: 0120-2344200</a>
+
+                     </div>
           </MDBCol>
           <hr className="clearfix w-100 d-md-none" />
           <MDBCol md="2">
@@ -80,20 +85,7 @@ export const Footer = () => {
           </MDBCol>
         </MDBRow>
       </MDBContainer>
-      <hr />
-      {/* <div className="text-center py-3">
-        <ul className="list-unstyled list-inline mb-0">
-          <li className="list-inline-item">
-            <h5 className="mb-1">Register for free</h5>
-          </li>
-          <li className="list-inline-item">
-            <a href="#!" className="btn btn-danger btn-rounded">
-              Sign up!
-            </a>
-          </li>
-        </ul>
-      </div> */}
-      <hr />
+    
       <div className="text-center">
         <ul className="list-unstyled list-inline">
           <li className="list-inline-item">
