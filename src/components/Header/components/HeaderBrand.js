@@ -22,7 +22,7 @@ export const HeaderBrand = () => {
           </h4>
         </div>
         <div className="header-brand-search-icons">
-          <TextField variant="outlined" placeholder="Search" size="small"/>
+          <TextField variant="outlined"  placeholder="Search" size="small"/>
         </div>
       </div>
     </div>
