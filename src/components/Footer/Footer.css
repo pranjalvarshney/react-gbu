@@ -1,9 +1,15 @@
 
 .bg {
-    background-image: url("https://raw.githubusercontent.com/pranjalvarshney/react-gbu/main/public/images/gbu-vitual.jpg?token=ALJW3R6H2XSDEVTUZSEO353AGSUGC");
+    background-image: url("https://raw.githubusercontent.com/pranjalvarshney/react-gbu/main/public/images/gbu-background.jpg?token=ALJW3R4SI42R2V44SP5RYQ3AGSU32");
     width:auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 1;
+    }
+    footer.page-footer a {
+        color: #000!important;
+    }
+    .footer-img{
+       height: 200px!important;
     }
