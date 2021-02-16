@@ -1,4 +1,5 @@
 import {
+  Container,
   FilledInput,
   FormControl,
   IconButton,
@@ -6,24 +7,43 @@ import {
   InputLabel,
   TextField,
 } from "@material-ui/core";
-import React from "react";
+import React, { useState } from "react";
 
 export const HeaderBrand = () => {
+  const [openSearch, setOpenSearch] = useState(false);
+
+  const handleSearchBtn = () => {
+    setOpenSearch(!openSearch);
+  };
   return (
     <div className="header-brand">
-      <div className="header-brand-wrapper">
-        <div className="header-brand-name-wrapper">
-          <img src="gbu.png" alt="logo" />
-          <h4 className="brand-name">
-              गौतम बुद्ध विश्वविद्यालय
+      <Container>
+        <div className="header-brand-wrapper">
+          <div className="header-brand-name-wrapper">
+            <img src="gbu.png" alt="logo" />
+            <h5 className="brand-name">
+              गौतम बुद्ध विश्वविद्यालय, ग्रेटर नोएडा
               <br />
-              GAUTAM BUDDHA UNIVERSITY
-          </h4>
+              GAUTAM BUDDHA UNIVERSITY, GREATER NOIDA
+            </h5>
+          </div>
+          <div className="header-brand-search-icons">
+            <div class="search-box">
+              <input
+                type="text"
+                placeholder="search here..."
+                className={`input-search ${openSearch ? "active " : ""}`}
+              />
+              <button
+                className={`btn-search ${openSearch ? "animate" : ""}`}
+                onClick={handleSearchBtn}
+              >
+                <i className="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
         </div>
-        <div className="header-brand-search-icons">
-          <TextField variant="outlined"  placeholder="Search" size="small"/>
-        </div>
-      </div>
+      </Container>
     </div>
   );
 };

@@ -8,6 +8,7 @@ export const Routing = () => {
     <BrowserRouter>
       <Switch>
         <Route exact path="/" component={Home}/>
+        <Route exact path="/home" component={Home}/>
         <Route exact path="/library" />
         <Route exact path="/ccc" />
         <Route exact path="/admissions" />

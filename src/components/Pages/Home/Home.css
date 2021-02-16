@@ -1,0 +1,19 @@
+.home-section-1{
+    padding: 3rem 0;
+}
+.home-section-1-header{
+    font-size: 44px;
+    font-weight: 400;
+    font-family: 'Monoton', cursive;
+}
+.home-section-2{
+    background-color: rgb(13, 13, 61);
+    padding: 3rem 0;
+}
+.home-section-2-header{ 
+    font-size: 44px;
+    font-weight: 400;
+    color:white;
+    font-family: 'Monoton', cursive;
+}
+

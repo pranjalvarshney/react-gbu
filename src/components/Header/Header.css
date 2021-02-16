@@ -5,6 +5,7 @@
 }
 .header-top{
     padding: 8px 0;
+    height: 35px;
     background-color: #cc3636;
     color: #fff;
 }
@@ -27,17 +28,16 @@
     height: 100%;
 }
 .wall-carousel-wrapper{
-    margin-top: 2px;
     background :linear-gradient(rgba(16, 15, 34, 0.911),#00000000);
     position: absolute;
-    top: 5%;
+    top: 35px;
     width: 100%;
     z-index: 10;
 }
 .header-brand{
     display: flex;
     position: relative;
-    padding: 10px 10%;
+    padding: 10px 0;
 }
 .header-brand-wrapper{
     display: flex;
@@ -78,7 +78,7 @@
     padding: 6px 18px;
     margin: 0 10px;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
 }
 .main-navigation-li:hover{
     background-color: #cc3636;
@@ -101,4 +101,55 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 8%;
+}
+.header-brand-search-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-box{
+    position: relative;
+    width: 500px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-search{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 200px;
+    border: 3px solid #cc3636;
+    border-radius: 50px;
+    outline: none;
+    padding: 0 16px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: all 0.7s ease;    
+}
+.input-search.active{
+    right: 50px;
+    width: 200px;
+}
+.btn-search{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    right: 200px;
+    background-color: #cc3636;
+    color: beige;
+    border: 2px solid white;
+    transition: all 0.7s ease;
+}
+.btn-search.animate{
+    transform: rotate(360deg);
+    right: 30px;
+    border: 3px solid white;
+
 }

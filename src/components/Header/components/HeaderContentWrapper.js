@@ -13,7 +13,7 @@ const dataArray = [
     title: "Startups",
     description: "Success stories of researchers and students",
     color: "#000",
-    bg: "#FFCDD2",
+    bg: "#FFEBEE",
   },
   {
     title: "Placements",
@@ -25,7 +25,7 @@ const dataArray = [
     title: "Campus Life",
     description: "Campus life stories of researchers and students",
     color: "#000",
-    bg: "#FFCDD2",
+    bg: "#FFEBEE",
   },
   {
     title: "Research",
@@ -40,13 +40,13 @@ export const HeaderContentWrapper = () => {
     <div className="header-content-wrapper">
       {dataArray.map((data, index) => {
         return (
-          <Card key={index} style={{display:"flex",alignContent:"center",width:"18rem", height:"12rem", margin: "auto 10px",textAlign:"center", backgroundColor:`${data.bg}`}}>
+          <Card elevation={3} key={index} style={{display:"flex",alignContent:"center",width:"18rem", height:"12rem", margin: "0 10px",textAlign:"center", backgroundColor:`${data.bg}`}}>
             <CardContent style={{color:`${data.color}`}}>
             <MDBIcon icon="atom" size="4x" />
-              <Typography  gutterBottom>
+              <Typography  variant="h6" gutterBottom>
                 {data.title}
               </Typography>
-              <Typography variant="caption">{data.description}</Typography>
+              <Typography variant="body2">{data.description}</Typography>
             </CardContent>
         
           </Card>
