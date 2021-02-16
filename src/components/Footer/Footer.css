@@ -1,7 +1,6 @@
 
-.bg {
-    background-image: url("footer-background.jpg");
-    width:auto;
+.footer-bg {
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,5 +9,8 @@
         color: rgb(255, 255, 255)!important;
     }
     .footer-img{
-       height: 200px!important;
+       height: 200px !important;
+    }
+    .footer-bg-wrapper{
+        background-color: #343a40eb;
     }

@@ -5,17 +5,18 @@ import "./Footer.css";
 export const Footer = () => {
   return (
     <div>
-      <MDBFooter className="page-footer pt-4 mt-4 bg bg-light unique-color-dark">
-        <MDBContainer fluid className="text-center text-md-left ">
-          <MDBRow>
-            <MDBCol md="6">
+      <MDBFooter style={{background: 'url(../images/footer-background.jpg)'}} className="page-footer  mt-4 footer-bg bg-light unique-color-dark">
+        <MDBContainer fluid className="text-center text-md-left footer-bg-wrapper py-5">
+          <MDBRow around>
+            <MDBCol md="4">
               <div class="text-center container ">
-                <img src="./gbu.png" className="img-fluid footer-img" alt="" />
+                <img src="./gbu.png" className="img-fluid footer-img py-3" alt="" />
+              
                 <h4 className="font-weight-normal">
                   गौतम बुद्ध विश्वविद्यालय <br></br>
                   Gautam Buddha University <br></br>
                 </h4>
-                <br></br>
+                <br/>
                 <h6 className="font-weight-light ">
                   Greater Noida Gautam Budh Nagar <br></br>
                   Uttar Pradesh (India) - 201310
