@@ -4,6 +4,8 @@ import { HeaderBrand } from "./components/HeaderBrand";
 import { HeaderMain } from "./components/HeaderMain";
 import { HeaderTop } from "./components/HeaderTop";
 import "./Header.css";
+import { HeaderCaption } from "./components/HeaderCaption";
+import { HeaderContentWrapper } from "./components/HeaderContentWrapper";
 
 const wallArray = ["../../images/wall1.jpg", "../../images/wall2.jpg", "../../images/wall3.jpg"];
 
@@ -27,6 +29,8 @@ export const Header = () => {
       <div className="wall-carousel-wrapper">
         <HeaderBrand />
         <HeaderMain />
+        <HeaderCaption />
+        <HeaderContentWrapper/>
       </div>
     </div>
   );

@@ -84,3 +84,21 @@
     background-color: #cc3636;
     color:white;
 }
+.header-caption{
+    text-align: center;
+    width: 60%;
+    color: whitesmoke;
+    display: flex;
+    margin: 5% auto;
+    font-family: 'Monoton', cursive;
+    align-content: center;
+    justify-self: center;
+    font-size: xx-large;
+}
+.header-content-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 8%;
+}
