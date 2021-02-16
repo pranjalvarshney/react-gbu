@@ -5,23 +5,23 @@ import "./Footer.css";
 export const Footer = () => {
   return (
     <div>
-      <MDBFooter className="page-footer font-small pt-4 mt-4 bg bg-light unique-color-dark">
-        <MDBContainer fluid className="text-center text-md-left text-dark">
+      <MDBFooter className="page-footer pt-4 mt-4 bg bg-light unique-color-dark">
+        <MDBContainer fluid className="text-center text-md-left ">
           <MDBRow>
             <MDBCol md="6">
-              <div class="text-center container text-dark">
+              <div class="text-center container ">
                 <img src="./gbu.png" className="img-fluid footer-img" alt="" />
                 <h4 className="font-weight-normal">
                   गौतम बुद्ध विश्वविद्यालय <br></br>
                   Gautam Buddha University <br></br>
                 </h4>
                 <br></br>
-                <h6 className="font-weight-light text-dark">
+                <h6 className="font-weight-light ">
                   Greater Noida Gautam Budh Nagar <br></br>
                   Uttar Pradesh (India) - 201310
                 </h6>
                 <a href="tel:01202344200">
-                  <i className="fa fa-phone mr-3 text-dark text-decoration-none"></i>
+                  <i className="fa fa-phone mr-3  text-decoration-none"></i>
                   Phone No.: 0120-2344200
                 </a>
               </div>
