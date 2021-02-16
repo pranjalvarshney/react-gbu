@@ -5,9 +5,6 @@ export const HeaderTop = () => {
         <div className="header-top">
         <div className="header-top-wrapper">
           <li className="header-top-li">
-              Campus Life
-          </li>
-          <li className="header-top-li">
               Clubs
           </li>
           <li className="header-top-li">

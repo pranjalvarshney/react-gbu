@@ -18,7 +18,6 @@ export const HeaderBrand = () => {
               गौतम बुद्ध विश्वविद्यालय
               <br />
               GAUTAM BUDDHA UNIVERSITY
-              <br />
           </h4>
         </div>
         <div className="header-brand-search-icons">
