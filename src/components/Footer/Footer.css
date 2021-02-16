@@ -1,6 +1,6 @@
 
 .bg {
-    background-image: url('../images/footer-background.jpg');
+    background-image: url("https://raw.githubusercontent.com/pranjalvarshney/react-gbu/main/public/images/footer-background.jpg?token=ALJW3R7D7IQZI6YEGAVAEG3AGSQBC");
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
