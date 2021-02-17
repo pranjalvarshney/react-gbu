@@ -27,7 +27,7 @@ export const HeaderBrand = ({handleToggle}) => {
             </IconButton>
           </div>
           <div className="header-brand-search-icons">
-            <div class="search-box">
+            <div className="search-box">
               <input
                 type="text"
                 placeholder="search here..."

@@ -48,17 +48,18 @@ export const HomeSection1 = () => {
     <div className="home-section-1">
       <Container>
         <h3 className="home-section-1-header">Study at GBU</h3>
-        <br/>
+        <br />
         <Grid container justify="center" spacing={3}>
           <Grid item md={4} xs={12}>
             <Typography variant="body1">
               We stimulate students vision and empower them to increase their
-              vigor, by intuting exponential, experimental and inter-disciplinary learning in a research environment.
+              vigor, by intuting exponential, experimental and
+              inter-disciplinary learning in a research environment.
             </Typography>
           </Grid>
           {arrayData.map((data, index) => {
             return (
-              <Grid item  key={index}>
+              <Grid item key={index}>
                 <Paper
                   elevation={3}
                   style={{ textAlign: "center", padding: "1rem" }}
@@ -70,30 +71,44 @@ export const HomeSection1 = () => {
             );
           })}
         </Grid>
-          <Grid container justify="center" alignItems="center">
-            <Paper style={{padding:".5rem",margin:"2rem 0"}} elevation={0}><Typography variant="h4" style={{fontFamily:"serif",fontWeight:"600"}} >Programmes <span style={{color:"#cc3636"}}>@GBU</span></Typography></Paper>
-            <br/>
-            <Grid
-              container
-              justify="center"
-              alignItems="center"
-              spacing={3}
-              direction="row"
+        <Grid container justify="center" alignItems="center">
+          <Paper style={{ padding: ".5rem", margin: "2rem 0" }} elevation={0}>
+            <Typography
+              style={{
+                fontWeight: "700",
+                fontSize:"40px"
+              }}
             >
-              {arrayProgrammes.map((data, index) => {
-                return (
-                  <Grid item key={index} >
-                    <Button
+              Programmes <span style={{ color: "#cc3636" }}>@GBU</span>
+            </Typography>
+          </Paper>
+          <br />
+          <Grid
+            container
+            justify="center"
+            alignItems="center"
+            spacing={3}
+            direction="row"
+          >
+            {arrayProgrammes.map((data, index) => {
+              return (
+                <Grid item key={index}>
+                  <Button
                     variant="contained"
-                      style={{ textAlign: "center",backgroundColor:"#cc3636", color:"#fff", padding: "1rem 2rem " }}
-                    >
-                      <Typography>{data.name}</Typography>
-                    </Button>
-                  </Grid>
-                );
-              })}
-            </Grid>
+                    style={{
+                      textAlign: "center",
+                      backgroundColor: "#cc3636",
+                      color: "#fff",
+                      padding: "1rem 2rem ",
+                    }}
+                  >
+                    <Typography>{data.name}</Typography>
+                  </Button>
+                </Grid>
+              );
+            })}
           </Grid>
+        </Grid>
       </Container>
     </div>
   );

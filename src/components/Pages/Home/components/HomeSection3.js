@@ -1,41 +1,24 @@
-import { Grid, Paper, Typography } from "@material-ui/core";
-import React, { useState } from "react";
+import { Card, Grid, CardActionArea,Typography, CardContent } from "@material-ui/core";
+import React from "react";
 import { Container } from "react-bootstrap";
-import EventIcon from "@material-ui/icons/Event";
-import LocalLibraryIcon from "@material-ui/icons/LocalLibrary";
 
 const exploreData = [
-  {
-    name: "News/Events",
-    icon: EventIcon,
-  },
+  
   {
     name: "Library",
-    icon: LocalLibraryIcon,
+    img:"../images/library.jpg"
   },
-  {
+  {         
     name: "Arts/Culture",
-    icon: "",
+    img: "../images/arts.jpg",
   },
   {
     name: "Meditation Center",
-    icon: "",
+    img: "../images/meditation.jpg",
   },
   {
     name: "Sports",
-    icon: "",
-  },
-  {
-    name: "Startups & Incubation",
-    icon: "",
-  },
-  {
-    name: "Center Computer Center",
-    icon: "",
-  },
-  {
-    name: "Clubs",
-    icon: "",
+    img: "../images/sports.jpg",
   },
 ];
 
@@ -45,7 +28,7 @@ export const HomeSection3 = () => {
   return (
     <div className="home-section-3">
       <Container>
-        <h3 className="home-section-3-header mb-3">Explore</h3>
+        <h3 className="home-section-3-header mb-5">Explore</h3>
         <Grid container justify="center" spacing={3} alignItems="center">
           {exploreData.map((data, index) => {
             
@@ -58,9 +41,9 @@ export const HomeSection3 = () => {
 };
 
 const TabsSection = (data,index) =>{
-  const [hoverStatus, setHoverStatus] = useState(false)
+
   return <Grid item xs={6} md={3} key={index}>
-  <Paper
+  {/* <Paper
     variant="elevation"
     elevation={3}
     onMouseEnter={() => setHoverStatus(true)}
@@ -78,7 +61,18 @@ const TabsSection = (data,index) =>{
     }}
   >
     <Typography variant="h5">{data.name}</Typography>
-  </Paper>
+  </Paper> */}
+    <Card elevation={3}>
+      <CardActionArea>
+        <img width="100%" src={data.img} alt={data.img}/>
+        <CardContent className="py-1 text-center">
+          <Typography gutterBottom variant="button" style={{whiteSpace:"nowrap"}} >
+            <b>{data.name}</b>
+          </Typography>
+        </CardContent>
+        </CardActionArea>
+    </Card>
+
 
 </Grid>
 }
