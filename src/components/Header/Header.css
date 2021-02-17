@@ -99,21 +99,20 @@
 }
 .header-caption{
     text-align: center;
-    width: 60%;
+    width: 80%;
     color: whitesmoke;
     display: flex;
-    margin: 5% auto;
+    margin: 6% auto;
     font-family: 'Monoton', cursive;
     align-content: center;
     justify-self: center;
-    font-size: xx-large;
+    font-size: 36px;
 }
 .header-content-wrapper{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 8%;
 }
 .header-brand-search-icons{
     display: flex;
@@ -122,8 +121,8 @@
 }
 .search-box{
     position: relative;
-    width: 500px;
     height: 100px;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -178,10 +177,11 @@
     }
     .wall-carousel-wrapper{
         top: 10px;
+        background-position: bottom;
     }
     .header-brand-name-wrapper > img{
-        height: 40px;
-        width: 40px;
+        height: 45px;
+        width: 45px;
     }
     .brand-name{
         color: #fff;
@@ -209,6 +209,10 @@
         top: 0;
         display: flex;
         flex-direction: column;
+    }
+    .header-caption{
+        font-size: 20px;
+        margin: 20% auto;
     }
 }
 

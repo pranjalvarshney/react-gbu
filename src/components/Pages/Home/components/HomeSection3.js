@@ -11,7 +11,7 @@ const exploreData = [
   },
   {
     name: "Library",
-    icon: "LocalLibraryIcon",
+    icon: LocalLibraryIcon,
   },
   {
     name: "Arts/Culture",

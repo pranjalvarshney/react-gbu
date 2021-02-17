@@ -1,7 +1,5 @@
 import {
-  Button,
-  Card,
-  CardActions,
+  Paper,
   CardContent,
   Grid,
   Typography,
@@ -40,17 +38,16 @@ const dataArray = [
 export const HeaderContentWrapper = () => {
   return (
     <Container>
-      <Grid container spacing={3} justify="center" alignItems="center">
+      <Grid className="mb-y" container spacing={3} justify="space-between" alignItems="center">
       {dataArray.map((data, index) => {
         return (
           <Grid item key={index} xs={6} md={3}>
-            <Card
+            <Paper
               elevation={3}
               style={{
                 display: "flex",
                 alignItems: "center",
                 height: "12rem",
-                margin: "0 10px",
                 textAlign: "center",
                 backgroundColor: `${data.bg}`,
               }}
@@ -62,7 +59,7 @@ export const HeaderContentWrapper = () => {
                 </Typography>
                 <Typography variant="caption">{data.description}</Typography>
               </CardContent>
-            </Card>
+            </Paper>
           </Grid>
         );
       })}
