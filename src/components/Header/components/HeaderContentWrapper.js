@@ -3,10 +3,12 @@ import {
   Card,
   CardActions,
   CardContent,
+  Grid,
   Typography,
 } from "@material-ui/core";
 import { MDBIcon } from "mdbreact";
 import React from "react";
+import { Container } from "react-bootstrap";
 
 const dataArray = [
   {
@@ -19,7 +21,7 @@ const dataArray = [
     title: "Placements",
     description: "Placement stories of researchers and students",
     color: "#fff",
-    bg: "#cc3636"
+    bg: "#cc3636",
   },
   {
     title: "Campus Life",
@@ -31,27 +33,40 @@ const dataArray = [
     title: "Research",
     description: "Research life stories of researchers and students",
     color: "#fff",
-    bg: "#cc3636"
+    bg: "#cc3636",
   },
 ];
 
 export const HeaderContentWrapper = () => {
   return (
-    <div className="header-content-wrapper">
+    <Container>
+      <Grid container spacing={3} justify="center" alignItems="center">
       {dataArray.map((data, index) => {
         return (
-          <Card elevation={3} key={index} style={{display:"flex",alignContent:"center",width:"18rem", height:"12rem", margin: "0 10px",textAlign:"center", backgroundColor:`${data.bg}`}}>
-            <CardContent style={{color:`${data.color}`}}>
-            <MDBIcon icon="atom" size="4x" />
-              <Typography  variant="h6" gutterBottom>
-                {data.title}
-              </Typography>
-              <Typography variant="body2">{data.description}</Typography>
-            </CardContent>
-        
-          </Card>
+          <Grid item key={index} xs={6} md={3}>
+            <Card
+              elevation={3}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                height: "12rem",
+                margin: "0 10px",
+                textAlign: "center",
+                backgroundColor: `${data.bg}`,
+              }}
+            >
+              <CardContent style={{ color: `${data.color}` }}>
+                <MDBIcon icon="atom" size="4x" />
+                <Typography variant="h6" gutterBottom>
+                  {data.title}
+                </Typography>
+                <Typography variant="caption">{data.description}</Typography>
+              </CardContent>
+            </Card>
+          </Grid>
         );
       })}
-    </div>
+    </Grid>
+    </Container>
   );
 };

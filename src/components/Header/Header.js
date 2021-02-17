@@ -1,5 +1,5 @@
 import { Carousel } from "react-bootstrap";
-import React from "react";
+import React, { useState } from "react";
 import { HeaderBrand } from "./components/HeaderBrand";
 import { HeaderMain } from "./components/HeaderMain";
 import { HeaderTop } from "./components/HeaderTop";
@@ -10,6 +10,13 @@ import { HeaderContentWrapper } from "./components/HeaderContentWrapper";
 const wallArray = ["../../images/wall1.jpg", "../../images/wall2.jpg", "../../images/wall3.jpg"];
 
 export const Header = () => {
+  const [toggleMenu, setToggleMenu] = useState(false)
+  
+  const handleToggle = () => {
+    console.log(toggleMenu)
+    setToggleMenu(!toggleMenu)
+  }
+  
   return (
     <div className="header">
       <HeaderTop />
@@ -27,8 +34,8 @@ export const Header = () => {
       </Carousel>
       </div>
       <div className="wall-carousel-wrapper">
-        <HeaderBrand />
-        <HeaderMain />
+        <HeaderBrand handleToggle={handleToggle}/>
+        <HeaderMain toggleMenu={toggleMenu} handleToggle={handleToggle}/>
         <HeaderCaption />
         <HeaderContentWrapper/>
       </div>
