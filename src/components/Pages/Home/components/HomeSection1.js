@@ -58,7 +58,7 @@ export const HomeSection1 = () => {
           </Grid>
           {arrayData.map((data, index) => {
             return (
-              <Grid item md={2} xs={6} key={index}>
+              <Grid item  key={index}>
                 <Paper
                   elevation={3}
                   style={{ textAlign: "center", padding: "1rem" }}

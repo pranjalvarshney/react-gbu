@@ -1,13 +1,5 @@
-import {
-  Container,
-  FilledInput,
-  FormControl,
-  IconButton,
-  InputAdornment,
-  InputLabel,
-  TextField,
-} from "@material-ui/core";
 import React, { useState } from "react";
+import { Container } from "react-bootstrap";
 
 export const HeaderBrand = () => {
   const [openSearch, setOpenSearch] = useState(false);

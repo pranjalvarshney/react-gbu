@@ -16,4 +16,13 @@
     color:white;
     font-family: 'Monoton', cursive;
 }
-
+.home-section-3{
+    background-color: #fff;
+    padding: 3rem 0;
+}
+.home-section-3-header{ 
+    font-size: 44px;
+    font-weight: 400;
+    color:#000;
+    font-family: 'Monoton', cursive;
+}
