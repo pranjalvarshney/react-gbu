@@ -94,7 +94,7 @@ export const Footer = () => {
             <hr className="clearfix w-100 d-md-none " />
             <MDBCol md="2">
               <h5 className="text-uppercase my-5 font-weight-bold" style={{borderBottom:"3px solid #cc3636",paddingBottom:"5px"}}>
-                Important Links :
+                Important Links
               </h5>
               <ul className="list-unstyled font-weight-normal">
                 <li className="py-2">

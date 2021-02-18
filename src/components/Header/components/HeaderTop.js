@@ -3,7 +3,7 @@ import React from 'react'
 export const HeaderTop = () => {
     return (
         <div className="header-top">
-        <div className="header-top-wrapper">
+        {/* <div className="header-top-wrapper">
           <li className="header-top-li">
               Clubs
           </li>
@@ -31,7 +31,7 @@ export const HeaderTop = () => {
           <li className="header-top-li">
               FAQs
           </li>
-        </div>
+        </div> */}
       </div>
     )
 }

@@ -4,8 +4,10 @@ import {
   Divider,
   Grid,
   Paper,
+  TextField,
   Typography,
 } from "@material-ui/core";
+import { TextFields } from "@material-ui/icons";
 import React from "react";
 import { Container } from "react-bootstrap";
 
@@ -34,7 +36,7 @@ const arrayProgrammes = [
     link: "/",
   },
   {
-    name: "Ph.D/M.Phil",
+    name: "M.Phil./Ph.D.",
     link: "/",
   },
   {
@@ -52,7 +54,7 @@ export const HomeSection1 = () => {
         <Grid container justify="center" spacing={3}>
           <Grid item md={4} xs={12}>
             <Typography variant="body1">
-              We stimulate students vision and empower them to increase their
+              We stimulate students' vision and empower them to increase their
               vigor, by intuting exponential, experimental and
               inter-disciplinary learning in a research environment.
             </Typography>
@@ -64,7 +66,7 @@ export const HomeSection1 = () => {
                   elevation={3}
                   style={{ textAlign: "center", padding: "1rem" }}
                 >
-                  <h2 style={{ fontWeight: "600" }}>{data.value}</h2>
+                  <h1 style={{ fontWeight: "800" }}>{data.value}</h1>
                   <Typography variant="button">{data.caption}</Typography>
                 </Paper>
               </Grid>
@@ -79,7 +81,7 @@ export const HomeSection1 = () => {
                 fontSize:"40px"
               }}
             >
-              Programmes <span style={{ color: "#cc3636" }}>@GBU</span>
+              Programmes
             </Typography>
           </Paper>
           <br />
@@ -108,6 +110,11 @@ export const HomeSection1 = () => {
               );
             })}
           </Grid>
+         <Grid className="my-3" container justify="center" alignItems="center">
+          <Grid item lg={8} xs={10}>
+          <TextField variant="outlined" placeholder="Search programmes, courses .... " fullWidth />
+          </Grid>
+         </Grid>
         </Grid>
       </Container>
     </div>

@@ -5,8 +5,8 @@
 }
 .header-top{
     position: relative;
-    padding: 8px 0;
-    height: 35px;
+    padding: 5px 0;
+    height: 10px;
     background-color: #cc3636;
     color: #fff;
 }
@@ -33,7 +33,7 @@
 .wall-carousel-wrapper{
     background :linear-gradient(rgba(16, 15, 34, 0.911),#00000000);
     position: absolute;
-    top: 35px;
+    top: 5px;
     width: 100%;
     z-index: 10;
 }
@@ -63,7 +63,8 @@
 .brand-name{
     color: #fff;
     margin: auto;
-    font-family: 'Vollkorn', serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     padding: 0 10px;
 }
 .responsive-menu-btn{
@@ -81,6 +82,7 @@
     background-color: #270b0bec;
     }
 .main-navigation-ul{
+    position: relative;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -88,13 +90,18 @@
     align-items: center;
 }
 .main-navigation-li{
-    padding: 6px 18px;
+    padding: 6px 18px 3px 18px;
     margin: 0 10px;
     color: #fff;
+    cursor: pointer;
+    border-bottom: 3px solid #00000000;
+    font-weight: 400;
+    font-family: "Roboto",sans-serif;
     font-size: 20px;
+    transition: transform .2s;
 }
 .main-navigation-li:hover{
-    background-color: #cc3636;
+    border-bottom: 3px solid #cc3636;
     color:white;
 }
 .header-caption{

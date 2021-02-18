@@ -10,8 +10,8 @@ import { Container } from "react-bootstrap";
 
 const dataArray = [
   {
-    title: "Startups",
-    description: "Success stories of researchers and students",
+    title: "Research",
+    description: "Research life stories of researchers and students",
     color: "#000",
     bg: "#FFEBEE",
   },
@@ -22,14 +22,14 @@ const dataArray = [
     bg: "#cc3636",
   },
   {
-    title: "Campus Life",
-    description: "Campus life stories of researchers and students",
+    title: "Startups",
+    description: "Success stories of researchers and students",
     color: "#000",
     bg: "#FFEBEE",
   },
   {
-    title: "Research",
-    description: "Research life stories of researchers and students",
+    title: "Admissions",
+    description: "Apply here now",
     color: "#fff",
     bg: "#cc3636",
   },
@@ -41,23 +41,24 @@ export const HeaderContentWrapper = () => {
       <Grid className="mb-y" container spacing={3} justify="space-between" alignItems="center">
       {dataArray.map((data, index) => {
         return (
-          <Grid item key={index} xs={6} md={3}>
+          <Grid item key={index} xs={6} md={3} >
             <Paper
               elevation={3}
               style={{
                 display: "flex",
+                justifyContent:"center",
                 alignItems: "center",
                 height: "12rem",
                 textAlign: "center",
                 backgroundColor: `${data.bg}`,
               }}
             >
-              <CardContent style={{ color: `${data.color}` }}>
+              <CardContent style={{ color: `${data.color}`,textAlign:"center" }}>
                 <MDBIcon icon="atom" size="4x" />
                 <Typography variant="h6" gutterBottom>
                   {data.title}
                 </Typography>
-                <Typography variant="caption">{data.description}</Typography>
+                <Typography variant="caption" style={{textAlign:"center"}}>{data.description}</Typography>
               </CardContent>
             </Paper>
           </Grid>
