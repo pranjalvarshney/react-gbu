@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { Home } from "./Pages/Home/Home";
 import Contact  from "./Pages/Contact/Contact"
+import Test from './Pages/Test/test'
 
 export const Routing = () => {
   return (
@@ -9,6 +10,7 @@ export const Routing = () => {
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route exact path="/home" component={Home}/>
+        <Route exact path="/test" component={Test}/>
         <Route exact path="/library" />
         <Route exact path="/ccc" />
         <Route exact path="/admissions" />
