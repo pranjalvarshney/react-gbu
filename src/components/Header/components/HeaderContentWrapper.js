@@ -38,7 +38,7 @@ const dataArray = [
 export const HeaderContentWrapper = () => {
   return (
     <Container>
-      <Grid className="mb-y" container spacing={3} justify="space-between" alignItems="center">
+      <Grid className="mb-3" container spacing={3} justify="space-between" alignItems="center">
       {dataArray.map((data, index) => {
         return (
           <Grid item key={index} xs={6} md={3} >

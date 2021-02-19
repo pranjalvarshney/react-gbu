@@ -109,7 +109,7 @@
     width: 80%;
     color: whitesmoke;
     display: flex;
-    margin: 6% auto;
+    margin: 6% auto 4% auto;
     font-family: 'Monoton', cursive;
     align-content: center;
     justify-self: center;
@@ -219,7 +219,7 @@
     }
     .header-caption{
         font-size: 20px;
-        margin: 20% auto;
+        margin: 16% auto 12% auto;
     }
 }
 
