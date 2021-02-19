@@ -10,6 +10,7 @@ import {
 import { TextFields } from "@material-ui/icons";
 import React from "react";
 import { Container } from "react-bootstrap";
+import SearchIcon from '@material-ui/icons/Search';
 
 const arrayData = [
   {
@@ -112,7 +113,7 @@ export const HomeSection1 = () => {
           </Grid>
          <Grid className="my-3" container justify="center" alignItems="center">
           <Grid item lg={8} xs={10}>
-          <TextField variant="outlined" placeholder="Search programmes, courses .... " fullWidth />
+            <input className="home-section-1-search" placeholder={`   Search for courses, programmes....`}/>
           </Grid>
          </Grid>
         </Grid>

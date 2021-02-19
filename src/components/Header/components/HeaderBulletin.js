@@ -1,5 +1,7 @@
 import { Grid, Paper, Typography } from "@material-ui/core";
 import React from "react";
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';       
+import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';       
 import { Container } from "react-bootstrap";
 
 const bulletinArray = [
@@ -24,20 +26,24 @@ export const HeaderBulletin = () => {
               elevation={3}
               style={{ backgroundColor: "#0000007a", borderRadius: "50px" }}
             >
-              <Grid container>
+              <Grid container alignItems="center">
                 <Grid
                   item
+                  xs={3}
+                  md={2}
+                  lg={1}
                   style={{
                     backgroundColor: "#cc3636",
                     color: "#fff",
-                    padding: "5px 1rem",
+                    padding: "5px 0",
+                    margin:"auto",
                     borderTopLeftRadius: "50px",
                     borderBottomLeftRadius: "50px",
                   }}
                 >
-                  <Typography variant="caption">Bulletin</Typography>
+                  <Typography variant="caption"><span><ArrowLeftIcon/></span>Bulletin   </Typography>
                 </Grid>
-                <Grid item style={{color: "#fff", padding: "5px 1rem" }}>
+                <Grid item xs={9} md={10} lg={11} style={{color: "#fff", padding: "2px 1rem 0 1rem" }}>
                   <marquee>
                     {bulletinArray.map((data, index) => {
                       return (
@@ -49,7 +55,7 @@ export const HeaderBulletin = () => {
                           variant="caption"
                           style={{cursor:"pointer"}}
                         >
-                          <span>{" >> "}</span>{data.name} 
+                          <span><ArrowRightIcon/> </span>{data.name} 
                         </Typography> 
                       );
                     })}
