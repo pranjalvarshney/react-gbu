@@ -1,7 +1,7 @@
 import { Grid, Paper, Typography } from "@material-ui/core";
 import React from "react";
-import ArrowRightIcon from '@material-ui/icons/ArrowRight';       
-import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';       
+import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
 import { Container } from "react-bootstrap";
 
 const bulletinArray = [
@@ -24,7 +24,7 @@ export const HeaderBulletin = () => {
           <Grid item xs={12}>
             <Paper
               elevation={3}
-              style={{ backgroundColor: "#0000007a", borderRadius: "50px" }}
+              style={{ backgroundColor: "#fff", borderRadius: "50px" }}
             >
               <Grid container alignItems="center">
                 <Grid
@@ -35,15 +35,26 @@ export const HeaderBulletin = () => {
                   style={{
                     backgroundColor: "#cc3636",
                     color: "#fff",
-                    padding: "5px 0",
-                    margin:"auto",
+                    padding: "8px 0",
+                    margin: "auto",
                     borderTopLeftRadius: "50px",
                     borderBottomLeftRadius: "50px",
                   }}
                 >
-                  <Typography variant="caption"><span><ArrowLeftIcon/></span>Bulletin   </Typography>
+                  <Typography variant="button" style={{marginLeft:"1rem"}}>
+                    {/* <span>
+                      <ArrowLeftIcon />
+                    </span> */}
+                    <b>{" "}Bulletin</b>{" "}
+                  </Typography>
                 </Grid>
-                <Grid item xs={9} md={10} lg={11} style={{color: "#fff", padding: "2px 1rem 0 1rem" }}>
+                <Grid
+                  item
+                  xs={9}
+                  md={10}
+                  lg={11}
+                  style={{ color: "#000080", padding: "2px 1rem 0 1rem" }}
+                >
                   <marquee>
                     {bulletinArray.map((data, index) => {
                       return (
@@ -52,11 +63,15 @@ export const HeaderBulletin = () => {
                           onClick={() => {
                             window.open(data.link);
                           }}
-                          variant="caption"
-                          style={{cursor:"pointer"}}
+                          variant="overline"
+                          style={{ cursor: "pointer" }}
                         >
-                          <span><ArrowRightIcon/> </span>{data.name} 
-                        </Typography> 
+                          <span>
+                            <ArrowRightIcon />{" "}
+                          </span>
+                          <b>
+                          {data.name}</b>
+                        </Typography>
                       );
                     })}
                   </marquee>

@@ -22,7 +22,7 @@ export const Header = () => {
     <div className="header">
       <HeaderTop />
       <div style={{backgroundColor: "white", width:"100%",height:"100vh"}}>
-      <Carousel indicators={false}  controls={false} interval={3000} >
+      <Carousel indicators={false}  controls={false} interval={5000} >
         <Carousel.Item>
           <img src={wallArray[0]} alt="wall" className="wall-carousel" />
         </Carousel.Item>

@@ -4,10 +4,10 @@ import { Container } from "react-bootstrap";
 import MenuIcon from '@material-ui/icons/Menu';
 
 export const HeaderBrand = ({handleToggle}) => {
-  const [openSearch, setOpenSearch] = useState(false);
+  const [openSearch, setOpenSearch] = useState(true);
 
   const handleSearchBtn = () => {
-    setOpenSearch(!openSearch);
+    setOpenSearch(true);
   };
   return (
     <div className="header-brand">
@@ -30,7 +30,7 @@ export const HeaderBrand = ({handleToggle}) => {
             <div className="search-box">
               <input
                 type="text"
-                placeholder="search here..."
+                placeholder="search "
                 className={`input-search ${openSearch ? "active " : ""}`}
               />
               <button

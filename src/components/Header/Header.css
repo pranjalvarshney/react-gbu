@@ -31,9 +31,9 @@
     background-size: cover;
 }
 .wall-carousel-wrapper{
-    background :linear-gradient(rgba(16, 15, 34, 0.911),#00000000);
+    background :linear-gradient(rgba(53, 53, 53, 0.671),#00000000);
     position: absolute;
-    top: 5px;
+    top: 10px;
     width: 100%;
     z-index: 10;
 }
@@ -106,14 +106,18 @@
 }
 .header-caption{
     text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 5px;
     width: 80%;
-    color: whitesmoke;
+    height: 280px;
+    color: white;
+    text-emphasis-color: yellow;
     display: flex;
-    margin: 6% auto 4% auto;
+    margin: auto;
     font-family: 'Monoton', cursive;
-    align-content: center;
-    justify-self: center;
-    font-size: 36px;
+    align-items: center;
+    justify-content: center;
+    font-size: 56px !important;
 }
 .header-content-wrapper{
     display: flex;
